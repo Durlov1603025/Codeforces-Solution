@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include<math.h>
+ 
+int main()
+{
+    int c,d,t,m,n,x,y;
+    scanf("%d",&t);
+	while(t--)
+	{
+	    scanf("%d %d",&m, &n);
+	    if(m==0 && n==0)
+	    printf("0\n");
+	    else{
+	        y = m*m+n*n;
+	        c= sqrt(y);
+	        d=c*c;
+	        x = y-d;
+	        if(x==0)
+	        printf("1\n");
+	        else
+	        printf("2\n");
+	    }
+	}
+    return 0;
+}
