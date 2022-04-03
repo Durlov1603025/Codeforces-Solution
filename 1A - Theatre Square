@@ -1,0 +1,12 @@
+
+#include<stdio.h>
+int main()
+{
+    double a,b,c,x,y,z;
+    scanf("%lf%lf%lf",&a,&b,&c);
+    x=a/c;
+    y=b/c;
+    z=ceil(x)*ceil(y);
+    printf("%lld",(long long int)z);
+    return 0;
+}
