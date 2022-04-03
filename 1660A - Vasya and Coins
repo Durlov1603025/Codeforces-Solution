@@ -1,0 +1,20 @@
+#include <stdio.h>
+ 
+int main()
+{
+    //int a=1, b=2;
+    int c,d,t,m,n;
+    scanf("%d",&t);
+	while(t--)
+	{
+	    scanf("%d %d",&m, &n);
+	    if(m==0)
+	    printf("%d\n", 1);
+	    else{
+	        c= m*1+n*2;
+	        d=c+1;
+	        printf("%d\n", d);
+	    }
+	}
+    return 0;
+}
