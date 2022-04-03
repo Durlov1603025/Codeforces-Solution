@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    int k,n,w,c,i,d=0;
+    scanf("%d %d %d",&k,&n,&w);
+    for(i=0;i<=w;i++){
+        c=(i*k);
+        d=d+c;
+    }
+    if(d>n)
+        printf("%d",d-n);
+    else
+        printf("0");
+    return 0;
+}
