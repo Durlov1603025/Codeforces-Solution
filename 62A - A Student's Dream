@@ -1,0 +1,37 @@
+#include<stdio.h>
+#include<stdlib.h>
+ 
+int main()
+{
+    int gr, gl, br, bl, i, a=0;
+    scanf("%d %d", &gl, &gr);
+    scanf("%d %d", &bl, &br);
+    if(gl==br || bl==gr){
+        printf("YES");
+        return 0;
+    }
+    if(gl>br && (gl-br)<=1){
+        printf("YES");
+        return 0;
+    }
+    else if(gr>bl && (gr-bl)<=1){
+        printf("YES");
+        return 0;
+    }
+    if(br%2==0){
+        br=br-1;
+    }
+    if(br>=gl && gl>=(br/2)){
+        printf("YES");
+        return 0;
+    }
+    if(bl%2==0){
+        bl=bl-1;
+    }
+    if(bl>=gr && gr>=(bl/2)){
+        printf("YES");
+         return 0;
+    }
+    printf("NO");
+    return 0;
+}
