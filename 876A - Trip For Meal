@@ -1,0 +1,27 @@
+#include <stdio.h>
+ 
+int main(void)
+{
+	int n, a, b, c;
+	int min;
+	int ans;
+ 
+	scanf("%d", &n);
+	scanf("%d", &a);
+	scanf("%d", &b);
+	scanf("%d", &c);
+ 
+	 if(a>b)
+        min=b;
+     else
+        min=a;
+ 
+	if (c < min && n != 1)
+		ans = min + c * (n - 2);
+	else
+		ans = min * (n - 1);
+ 
+	printf("%d", ans);
+ 
+	return 0;
+}
