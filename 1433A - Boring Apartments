@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<string.h>
+ 
+int main()
+{
+    int t,x;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    int r=0,c=0,ans=0;
+	    scanf("%d",&x);
+	    r = x%10;
+	    while(x!=0)
+		{
+			c++;
+			x=x/10;
+		}
+		c=(c*(c+1))/2;
+		ans = c+ ((r-1)*10);
+		printf("%d\n", ans);
+	}
+}
