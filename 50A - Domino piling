@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main()
+{
+    int M,N,P;
+    scanf("%d%d",&M,&N);
+    P=(M*N)/2;
+    printf("%d",P);
+    return 0;
+}
