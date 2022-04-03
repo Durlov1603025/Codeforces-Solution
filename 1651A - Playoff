@@ -1,0 +1,16 @@
+#include <iostream>
+#include <math.h>
+ 
+using namespace std;
+ 
+int main()
+{
+    int t,n, team, winner;
+    cin>>t;
+    while(t--){
+        cin>>n;
+        team = pow(2,n);
+        winner = team-1;
+        cout<<winner<< endl;
+        }
+}
