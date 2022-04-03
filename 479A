@@ -1,0 +1,26 @@
+#include <stdio.h>
+ 
+int main()
+{
+    int a,b,c,d,e,f,n,m;
+    scanf("%d", &a);
+    scanf("%d", &b);
+    scanf("%d", &c);
+    
+    d = a+b*c;
+    //printf("%d", d);
+    e= a*(b+c);
+    f = a*b*c;
+    m = (a+b)*c;
+    n = a+b+c;
+       if (d >= e && d >= f && d >= m && d >= n)
+        printf("%d", d);
+    else if (d <= e && e >= f && e >= m && e >= n)
+        printf("%d", e);
+    else if (f >= e && d <= f && f >= m && f >= n)
+        printf("%d", f);
+    else if (m >= e && m >= f && d <= m && m >= n)
+        printf("%d", m);
+    else
+        printf("%d", n);
+}
