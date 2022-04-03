@@ -1,0 +1,15 @@
+#include<stdio.h>
+main()
+{
+	int i,n,s=0;
+	char a[50];
+	scanf("%d",&n);
+	scanf("%s",a);
+	for(i=0;i<n;i++)
+	{
+		if(a[i]==a[i+1])
+		s++;
+	}
+	printf("%d",s);
+	return 0;
+}
