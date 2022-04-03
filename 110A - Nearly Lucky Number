@@ -1,0 +1,19 @@
+#include<stdio.h>
+main ()
+{
+int a,b=0;
+long long x;
+scanf("%lld",&x);
+while(x!=0)
+{
+    a=x%10;
+    if(a==7||a==4)
+    b++;
+    x=x/10;
+}
+if(b==7||b==4)
+    printf("YES");
+else
+    printf("NO");
+    return 0;
+}
