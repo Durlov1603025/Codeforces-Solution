@@ -1,0 +1,35 @@
+#include<bits/stdc++.h>
+ 
+using namespace std;
+ 
+int main()
+{
+    int t,l,a;
+    cin>>t;
+    while(t--)
+    {
+        int m;
+        cin>>l;
+        vector<int> v(l);
+        for(m=0;m<l;m++)
+        {
+            cin >> v[m];
+        }
+        sort(v.begin(),v.end());
+        if(l==1)
+		{
+			if(v[l-1]==1)
+				cout<<"YES"<<endl;
+			else
+				cout<<"NO"<<endl;
+		}
+		else
+		{
+			if(v[l-1]-v[l-2]<2)
+				cout<<"YES"<<endl;
+			else
+				cout<<"NO"<<endl;
+		}
+    }
+    return 0;
+}
