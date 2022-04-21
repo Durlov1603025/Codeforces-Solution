@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+
+int main()
+{
+    int t;
+    cin >> t;
+
+    char c[t];
+    cin>>c;
+    
+ 
+    for(int i=0;i<t;i++){
+        if(c[i]=='n')
+        cout <<1<<" " ;
+    }
+ 
+    for(int i=0;i<t;i++){
+        if(c[i]=='z')
+        cout <<0<<" " ; 
+    } 
+    return 0;
+}
