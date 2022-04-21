@@ -23,7 +23,7 @@ int main()
             {
                 diff = 2*diff-1;
             }
-            int c = max(a,b);
+            int c = min(a,b);
             ans = 2* (c-1) + diff;
             cout<<ans<<endl;
         }
