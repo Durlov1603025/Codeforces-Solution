@@ -8,7 +8,7 @@ int main()
     while (t--)
     {
         cin>>a>>b;
-        if ((a==1||b==1)&&a+b>3)
+        if ((a==1||b==1)&& a+b>3)
         {
             cout<<-1<<endl;
         }
