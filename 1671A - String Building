@@ -1,0 +1,40 @@
+#include <bits/stdc++.h>
+using namespace std; 
+
+int main() {
+    int t,i,len,c;
+    char s[50];
+    cin >> t;
+    while(t--)
+    {
+        scanf("%s",s);
+        len = strlen(s);
+        if (len == 1)
+        cout << "NO" << endl;
+        else
+        {
+            for(i = 1; i<len; i++)
+            {
+                c =0;
+                if(s[0]!=s[1] || s[len-1]!=s[len-2])
+                {
+                    cout << "NO" << endl;
+                    c = 1;
+                    break;
+                }
+                else if(s[i]!=s[i-1] && s[i]!=s[i+1])
+                {
+                    cout << "NO" << endl;
+                    c = 1;
+                    break;
+                }
+            }
+            if (c != 1)
+            {
+                cout << "YES" << endl;
+            }
+        }
+    }
+    
+    return 0;
+}
