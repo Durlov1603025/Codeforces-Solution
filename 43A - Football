@@ -6,7 +6,6 @@ int main()
 {
     int n,i, goal1=1, goal2=0;
     string team, team1,team2;
-   // char team[100],team1[100],team2[100];
     cin>>n;
     cin>>team1;
     for(i=1;i<n;i++)
