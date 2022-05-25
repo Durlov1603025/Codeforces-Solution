@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int n,i, goal1=1, goal2=0;
+    string team, team1,team2;
+   // char team[100],team1[100],team2[100];
+    cin>>n;
+    cin>>team1;
+    for(i=1;i<n;i++)
+    {
+        cin>>team;
+        if (team == team1){
+            goal1++;
+        }
+        else {
+            goal2++;
+            team2=team;
+        }
+    }
+    if (goal1>goal2)
+        cout<< team1;
+    else
+        cout<< team2;
+}
