@@ -1,0 +1,46 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main (){
+
+    int t,i,len,c;
+    char str[50];
+    cin >> t;
+    while(t--)
+    {
+        scanf("%s",str);
+        if(strcmp(str, "YES") == 0 ){
+        cout<<"YES"<<endl;
+    }
+    else if (strcmp(str, "YeS") == 0 )
+    {
+        cout<<"YES"<<endl;
+    }
+    else if (strcmp(str, "Yes") == 0 )
+    {
+        cout<<"YES"<<endl;
+    }
+    else if (strcmp(str, "YEs") == 0 )
+    {
+        cout<<"YES"<<endl;
+    }
+    else if (strcmp(str, "yES") == 0 )
+    {
+        cout<<"YES"<<endl;
+    }
+    else if (strcmp(str, "yEs") == 0 )
+    {
+        cout<<"YES"<<endl;
+    }
+    else if (strcmp(str, "yes") == 0 )
+    {
+        cout<<"YES"<<endl;
+    }
+    else if (strcmp(str, "yeS") == 0 )
+    {
+        cout<<"YES"<<endl;
+    }
+    else{
+        cout<<"NO"<<endl;
+    }
+    }
+}
