@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	int n,m,x=1; cin>>n>>m; char c=0;
+	while(n--){
+		char a;
+		cin>>a;
+		if(c==a) x=0;
+		c=a;
+		for(int i=1;i<m;i++) {cin>>a; if(a!=c) x=0;}
+	}
+	cout<<(x==0?"NO":"YES");
+	return 0;
+}
